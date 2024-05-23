@@ -1,11 +1,9 @@
 <?php
-session_start();
+    $dbhost = DB_HOST;
+    $dbname = DB_DATABASE;
+    $dbuname = DB_USERNAME;
+    $dbpass = DB_PASSWORD;
+    //$sslcert    = "ssl/DigiCertGlobalRootCA.crt.pem";
 
-$conn = mysqli_connect(
-  'localhost',
-  'root',
-  'password123',
-  'php_mysql_crud'
-) or die(mysqli_erro($mysqli));
-
+    $conn = mysqli_connect($dbhost, $dbuname, $dbpass, $dbname);
 ?>
