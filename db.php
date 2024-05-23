@@ -3,7 +3,7 @@
     $dbname = DB_DATABASE;
     $dbuname = DB_USERNAME;
     $dbpass = DB_PASSWORD;
-    //$sslcert    = "ssl/DigiCertGlobalRootCA.crt.pem";
+    $sslcert    = "ssl/DigiCertGlobalRootCA.crt.pem";
 
     $conn = mysqli_init();
     mysqli_real_connect($conn, $db_host, $db_user, $db_password, $db_name, 3306, $ssl_cert);
